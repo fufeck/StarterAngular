@@ -29,12 +29,24 @@ html, body {
 	font-family: 'Raleway';
 }
 
-.visible-mobile {
-  .visible-xs-block();
+.show-mobile {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  @media(max-width:767px) { // MOBILE
+    display: block;
+  }
 }
 
-.hidden-mobile {
-  .visible-sm-block();
-  .visible-md-block();
-  .visible-lg-block();
+.hide-mobile {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  @media(min-width:768px) { // TABLET
+    display: block;
+  }
 }

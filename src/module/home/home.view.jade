@@ -1,3 +1,69 @@
-.view.visible-mobile
+#back
+.view-home.show-mobile
+	.view-welcome
+			.container.welcome
 
-.view.hidden-mobile
+.view-home.hide-mobile(scrolly)
+	.header
+		#back-header
+		a.link-cv(href="../img/cvFT2015.pdf" target="_blank") Mon CV
+		.links
+			.link(ng-click="goTo('about-me')") A Propos de moi
+			.link(ng-click="goTo('techno')") Mon expertise
+			.link(ng-click="goTo('project')") Mon portfolio
+	.view-welcome
+		.container-welcome
+			.wording(ng-class="{fadeIn : animeWording == true, fadeOut : animeWording == false}") {{ welcomeWording[wordingSelected] }}
+
+	.view-about-me#about-me
+		.container-about-me
+			.title-about-me A propos de moi
+			.wording-about-me Actuellement étudiant de 22ans en 2 ème année de l'école 42, je suis un jeune passionné, développeur d'applications web et mobile qui habite à Saclay. Etant quelqu'un d'acharné avec le mental d'un sportif, je n'ai pas peur de relever des défis. Grâce à Epitech et maintenant 42, j'ai pu développer une adaptation à toute épreuve ainsi qu'une capacité d'auto-formation rapide et efficace.
+
+	.view-techno#techno
+		.title-technos Mon expertise
+		.container-techno
+			.container-trio(ng-mouseenter="showTechnoOne = true" ng-mouseleave="showTechnoOne = false")
+				img(src="../img/web.png")
+				.title-techno Developpeur Web
+				.desc-show(ng-show="!showTechnoOne") Je créer des sites vitrines, site de d'e-commerce, site dynamiques et blogs au design responsive.
+				.desc-hide(ng-show="showTechnoOne") HTML5, CSS3, javascript - jQuery <br/> PHP - orientée objet, Zend <br/> Prestashop et Magento <br/> Gestion des SEO
+
+			.container-trio(ng-mouseenter="showTechnoTwo = true" ng-mouseleave="showTechnoTwo = false")
+				img(src="../img/applimobile.png")
+				.title-techno Developpeur Mobile
+				.desc-show(ng-show="!showTechnoTwo") Je réalise de application mobile hybride <br/> Android et iOS.
+				.desc-hide(ng-show="showTechnoTwo") Cordova - Ionic <br/>AngularJs, coffeeScprit, less et jade <br/> Node Js - Express, Strongloop
+			.container-trio(ng-mouseenter="showTechnoTree = true" ng-mouseleave="showTechnoTree = false")
+				img(src="../img/web.png")
+				.title-techno Gestion de projet
+				.desc-show(ng-show="!showTechnoTree") Je suis autonome et sais travailler en groupe <br/>avec des logiciel adapté 
+				.desc-hide(ng-show="showTechnoTree") Logiciel de versionning - Git <br/> L'environnement - Vagrant / Docker <br/> La gestion avec Trello et méthode Scrum
+
+	.view-project#project
+		.title-projects Mon portfolio
+		.desc-projects Voici une liste non exhaustive de mes derniers projets afin de vous donner un aperçu de mes compétences
+		.container-projects
+			.project(ng-repeat="project in projects" ng-mouseenter="project.show = true" ng-mouseleave="project.show = false")
+				a.description(ng-class="{slideUpNav : project.show == true, slideDownNav : project.show == false}" href="{{project.src}}")
+					.title-project {{ project.title }}
+					img(src="{{project.picto}}")
+					.description-project {{ project.description }}
+				.back-project
+					img(src="{{project.back}}")
+
+	.view-contact#contact
+		.reseau 
+			.title-reseau Réseaux socieaux
+			.reseau-link
+				a(href="https://twitter.com/nooners_inside" target="_blank")
+					img(src="img/linkedin.jpeg")
+					| linkdin
+			.reseau-link
+				a(href="https://instagram.com/nooners_inside" target="_blank")
+					img(src="img/picto-twitter.png")
+					| twitter
+		.contact
+			.title-contact Me contactez
+			.contact-link 0649422062
+			.contact-link fabien.tafforeau@gmail.com

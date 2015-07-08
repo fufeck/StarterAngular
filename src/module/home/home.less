@@ -10,4 +10,336 @@
 
 }
 
+#back {
+  background-image :url("../img/backMac.jpg");
+  background-size: 100% 100%;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+#back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+}
+
+.view-home {
+	top : 0;
+	left : 0;
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	.header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 50px;
+		width: 100%;
+		z-index: 500;
+		#back-header {
+			position: absolute;
+			z-index: 0;
+			top : 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0;
+		}
+		.link-cv {
+			position: absolute;
+			top : 0;
+			right: 0;
+			height: 100%;
+			z-index: 900;
+			padding-right: 20px;
+			color: white;
+			padding-top: 10px;
+			font-size: 1.5em;
+			font-weight: 200;
+			cursor:pointer;
+			&:hover {
+				color: rgb(51, 153, 255);
+				text-decoration: none;
+			}
+			&:focus {
+				text-decoration: none;
+			}
+		}
+		.links {
+			position: absolute;
+			top : 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 500;
+			padding-left: 10px;
+			.link {
+				float: left;
+				color: white;
+				padding-top: 10px;
+				font-size: 1.5em;
+				font-weight: 200;
+				margin-left: 15px;
+				margin-right: 15px;
+				cursor:pointer;
+				&:hover {
+					color: rgb(51, 153, 255);
+					text-decoration: none;
+				}
+				&:focus {
+					text-decoration: none;
+				}
+			}
+			
+		}
+	}
+
+
+	.view-welcome {
+		position: relative;
+		top : 0;
+		left : 0;
+		height: 100%;
+		width: 100%;
+		.container-welcome {
+			width: 600px;
+			height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 300px;
+			.wording {
+				.text-center;
+				.animated;
+				font-size: 2.5em;
+				color: white;
+				font-weight: 200;
+			}
+		}
+	}
+
+
+	.view-about-me {
+		position: relative;
+		top : 0;
+		left : 0;
+		height: 360px;
+		width: 100%;
+		background-color: white;
+		.container-about-me {
+			width: 768px;
+			height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			.title-about-me {
+				.text-center;
+				height: 100px;
+				padding-top: 50px;
+				font-size: 2.5em;
+				color: rgba(0, 0, 0, 0.8);
+				font-weight: 200;
+			}
+			.wording-about-me {
+				.text-center;
+				padding-top: 50px;
+				font-size: 1.5em;
+				color: rgba(0, 0, 0, 0.8);
+				font-weight: 200;
+			}
+		}
+	}
+
+
+	.view-techno {
+		position: relative;
+		top : 0;
+		left : 0;
+		height: 480px;
+		width: 100%;
+		color : white;
+
+		.title-technos {
+			.text-center;
+			padding-bottom: 60px;
+			padding-top: 40px;
+			font-size: 2.5em;
+			font-weight: 200;
+			color: white;
+		}
+		.container-techno {
+			.make-xs-column(12);
+			height: 100%;
+			img {
+				.animated;
+			}
+			.container-trio {
+				.make-xs-column(4);
+				.text-center;
+				.title-techno {
+					padding-top: 10px;
+					padding-bottom: 10px;
+					font-size: 2em;
+					font-weight: 200;
+					color: white;
+				}
+				.desc-show, .desc-hide {
+					font-size: 1.2em;
+					font-weight: 300;
+					color: white;
+				}
+			}
+		}
+	}
+
+	.view-project {
+		position: relative;
+		top : 0;
+		left : 0;
+		height: 600px;
+		background-color: white;
+		.title-projects {
+			position: absolute;
+			top : 0;
+			.text-center;
+			width: 100%;
+			padding-top: 40px;
+			padding-bottom: 20px;
+			font-size: 2.5em;
+			font-weight: 200;
+			color: rgba(0, 0, 0, 0.8);
+		}
+		.desc-projects {
+			position: absolute;
+			top : 120px;
+			padding-left: 80px;
+			padding-right: 80px;
+			.text-center;
+			width: 100%;
+			font-size: 1.8em;
+			font-weight: 200;
+			color: rgba(0, 0, 0, 0.8);
+
+		}
+
+		.container-projects {
+			position: relative;
+			top : 50px;
+			width: 960px;
+			height: 300px;
+			margin-left: auto;
+			margin-right: auto;
+
+			.project {
+				.animated;
+				position: relative;
+				height: 300px;
+				width: 300px;
+				float: left;
+				margin-left: 10px;
+				margin-right: 10px;
+				overflow-y: hidden;
+				border-radius: 2px;
+				.text-center;
+				.back-project {
+					img {
+						border-radius: 2px;
+						width: 100%;
+						height: 100%;
+					}	
+				}
+			}
+		}
+		.description {
+			.animated;
+			position: absolute;
+			top : 0;
+			left : 0;
+			height: 100%;
+			width: 100%;
+			color : white;
+			background-color: rgba(51, 153, 255, 0.8);
+			.text-center;
+			.title-project {
+				width: 100%;
+				font-size: 2em;
+				font-weight: 200;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				color: white;
+			}
+			img {
+				border-radius: 2px;
+				height: 100px;
+				width: auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}	
+			.description-project {
+				width: 100%;
+				padding-top: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				font-size: 1.1em;
+				font-weight: 300;
+				color: white;
+			}
+		}
+	}
+
+
+	.view-contact {
+		position: relative;
+		top : 0;
+		left : 0;
+		height: 200px;
+		width: 100%;
+		color: white;
+		.reseau {
+			position: absolute;
+			top : 40px;
+			left : 100px;
+			.title-reseau {
+				font-size: 1.3em;
+				font-weight: 300;		
+				padding-bottom: 10px;
+			}
+			.reseau-link {
+				padding-bottom: 5px;
+				a {
+					color: white;
+					font-size: 1em;
+					font-weight: 300;
+					img {
+						height: 30px;
+						width: auto;
+						margin-right : 5px;
+					}
+				}
+			}
+			
+		}
+		.contact {
+			position: absolute;
+			top : 40px;
+			left : 300px;
+			.title-contact {
+				font-size: 1.3em;
+				font-weight: 300;	
+				padding-bottom: 10px;	
+			}
+			.contact-link {
+				padding-bottom: 5px;
+				font-weight: 300;
+				font-size: 1em;
+			}
+		}
+	}
+
+}
 
