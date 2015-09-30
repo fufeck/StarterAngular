@@ -55,7 +55,7 @@ angular.module("starter.home").controller("homeCtrl", function($scope, $timeout,
   $scope.projectShow = false;
   $scope.animeWording = true;
   $scope.wordingSelected = 0;
-  $scope.welcomeWording = ["Bienvenue sur le portfolio de Fabien Tafforeau", "Etudiant en 2eme années à l'école 42"];
+  $scope.welcomeWording = ["Bienvenue sur le portfolio de Fabien Tafforeau", "Développeur passioné Mobile et Web", "Etudiant en 2eme années à L'école 42"];
   $scope.back = 1;
   $scope.backHeader = 1;
   $scope.projects = [

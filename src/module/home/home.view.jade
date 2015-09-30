@@ -6,7 +6,7 @@
 .view-home.hide-mobile(scrolly)
 	.header
 		#back-header
-		a.link-cv(href="../img/cvFT2015.pdf" target="_blank") Mon CV
+		a.link-cv(href="../img/cvFabienTafforeau2015.pdf" target="_blank") Mon CV
 		.links
 			.link(ng-click="goTo('about-me')") A Propos de moi
 			.link(ng-click="goTo('techno')") Mon expertise
@@ -18,7 +18,7 @@
 	.view-about-me#about-me
 		.container-about-me
 			.title-about-me A propos de moi
-			.wording-about-me Actuellement étudiant de 22ans en 2 ème année de l'école 42, je suis un jeune passionné, développeur d'applications web et mobile qui habite à Saclay. Etant quelqu'un d'acharné avec le mental d'un sportif, je n'ai pas peur de relever des défis. Grâce à Epitech et maintenant 42, j'ai pu développer une adaptation à toute épreuve ainsi qu'une capacité d'auto-formation rapide et efficace.
+			.wording-about-me Actuellement étudiant de 23ans en 2 ème année de l'école 42, je suis un jeune passionné, développeur d'applications web et mobile qui habite à Saclay. Etant quelqu'un d'acharné avec le mental d'un sportif, je n'ai pas peur de relever des défis. Grâce à Epitech et maintenant 42, j'ai pu développer une adaptation à toute épreuve ainsi qu'une capacité d'auto-formation rapide et efficace.
 
 	.view-techno#techno
 		.title-technos Mon expertise
@@ -35,35 +35,32 @@
 				.desc-show(ng-show="!showTechnoTwo") Je réalise de application mobile hybride <br/> Android et iOS.
 				.desc-hide(ng-show="showTechnoTwo") Cordova - Ionic <br/>AngularJs, coffeeScprit, less et jade <br/> Node Js - Express, Strongloop
 			.container-trio(ng-mouseenter="showTechnoTree = true" ng-mouseleave="showTechnoTree = false")
-				img(src="../img/web.png")
+				img(src="../img/profile5.png")
 				.title-techno Gestion de projet
 				.desc-show(ng-show="!showTechnoTree") Je suis autonome et sais travailler en groupe <br/>avec des logiciel adapté 
 				.desc-hide(ng-show="showTechnoTree") Logiciel de versionning - Git <br/> L'environnement - Vagrant / Docker <br/> La gestion avec Trello et méthode Scrum
 
 	.view-project#project
 		.title-projects Mon portfolio
-		.desc-projects Voici une liste non exhaustive de mes derniers projets afin de vous donner un aperçu de mes compétences
 		.container-projects
-			.project(ng-repeat="project in projects" ng-mouseenter="project.show = true" ng-mouseleave="project.show = false")
-				a.description(ng-class="{slideUpNav : project.show == true, slideDownNav : project.show == false}" href="{{project.src}}")
-					.title-project {{ project.title }}
-					img(src="{{project.picto}}")
-					.description-project {{ project.description }}
-				.back-project
-					img(src="{{project.back}}")
+			img.ia-pulse(ng-src="../img/logo.png")
+			img.looky(ng-src="../img/logo_looky.png")
+			img.sma(ng-src="../img/sma.png")
+			img.noon(ng-src="../img/share3.png")
+			img.subvitamine(ng-src="../img/logo_white.png")
 
 	.view-contact#contact
 		.reseau 
 			.title-reseau Réseaux socieaux
 			.reseau-link
-				a(href="https://twitter.com/nooners_inside" target="_blank")
-					img(src="img/linkedin.jpeg")
-					| linkdin
+				a(href="https://fr.linkedin.com/pub/fabien-tafforeau/b3/b47/a98" target="_blank")
+					img(src="../img/linkedin.png")
+					| linkedin
 			.reseau-link
-				a(href="https://instagram.com/nooners_inside" target="_blank")
-					img(src="img/picto-twitter.png")
-					| twitter
+				a(href="https://github.com/fufeck" target="_blank")
+					img(src="../img/github.png")
+					| github
 		.contact
 			.title-contact Me contactez
-			.contact-link 0649422062
+			.contact-link 0783963184
 			.contact-link fabien.tafforeau@gmail.com

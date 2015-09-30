@@ -11452,7 +11452,7 @@ a:active {
   width: 100%;
 }
 .view-home .view-welcome .container-welcome {
-  width: 600px;
+  width: 520px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -11464,7 +11464,7 @@ a:active {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  font-size: 2.5em;
+  font-size: 3em;
   color: white;
   font-weight: 200;
 }
@@ -11472,7 +11472,7 @@ a:active {
   position: relative;
   top: 0;
   left: 0;
-  height: 360px;
+  height: 400px;
   width: 100%;
   background-color: white;
 }
@@ -11501,7 +11501,7 @@ a:active {
   position: relative;
   top: 0;
   left: 0;
-  height: 480px;
+  height: 500px;
   width: 100%;
   color: white;
 }
@@ -11523,6 +11523,7 @@ a:active {
   height: 100%;
 }
 .view-home .view-techno .container-techno img {
+  height: 150px;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -11568,82 +11569,40 @@ a:active {
   font-weight: 200;
   color: rgba(0, 0, 0, 0.8);
 }
-.view-home .view-project .desc-projects {
-  position: absolute;
-  top: 120px;
-  padding-left: 80px;
-  padding-right: 80px;
-  text-align: center;
-  width: 100%;
-  font-size: 1.8em;
-  font-weight: 200;
-  color: rgba(0, 0, 0, 0.8);
-}
 .view-home .view-project .container-projects {
   position: relative;
-  top: 50px;
-  width: 960px;
-  height: 300px;
+  width: 660px;
+  height: 640px;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
 }
-.view-home .view-project .container-projects .project {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+.view-home .view-project .container-projects .ia-pulse {
   position: relative;
-  height: 300px;
+  width: 210px;
+}
+.view-home .view-project .container-projects .looky {
+  position: relative;
+  width: 240px;
+}
+.view-home .view-project .container-projects .sma {
+  position: relative;
+  padding-left: 10px;
+  width: 200px;
+  z-index: 10;
+}
+.view-home .view-project .container-projects .noon {
+  position: relative;
   width: 300px;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  overflow-y: hidden;
+  z-index: 0;
+}
+.view-home .view-project .container-projects .subvitamine {
+  position: relative;
+  margin-top: -40px !important;
+  background-color: #32c0e2;
   border-radius: 2px;
-  text-align: center;
-}
-.view-home .view-project .container-projects .project .back-project img {
-  border-radius: 2px;
-  width: 100%;
-  height: 100%;
-}
-.view-home .view-project .description {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  color: white;
-  background-color: rgba(51, 153, 255, 0.8);
-  text-align: center;
-}
-.view-home .view-project .description .title-project {
-  width: 100%;
-  font-size: 2em;
-  font-weight: 200;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: white;
-}
-.view-home .view-project .description img {
-  border-radius: 2px;
-  height: 100px;
-  width: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.view-home .view-project .description .description-project {
-  width: 100%;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 1.1em;
-  font-weight: 300;
-  color: white;
+  width: 360px;
+  z-index: 10;
 }
 .view-home .view-contact {
   position: relative;
